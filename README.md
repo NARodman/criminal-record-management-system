@@ -13,12 +13,12 @@ The Criminal Records Management System is a web-based application designed to he
 
 ## File Structure 
 
-|-- index.html                  #homepage
+|-- index.html                              #homepage
 
-|-- addCriminal.html            #Add a new criminal record 
+|-- addCriminal.html                        #Add a new criminal record 
 
-|-- listCriminal.html           #List of all criminal records
+|-- listCriminal.html                       #List of all criminal records
 
-|-- editCriminal.html           #View/Edit criminal records
+|-- editCriminal.html                       #View/Edit criminal records
 
-|-- style.css                   #stylesheet for all pages
+|-- style.css                               #stylesheet for all pages
