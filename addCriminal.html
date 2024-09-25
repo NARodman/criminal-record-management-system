@@ -1,0 +1,48 @@
+<!--add criminal record-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" initial-scale="1.0">
+        <title>Add Criminal Record</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>Criminal Records Management System</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="addCriminal.html">Add Criminal Record</a></li>
+                    <li><a href="listCriminal.html">View Records</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <!--form to add a new record-->
+                <h2>Add A New Criminal Record</h2>
+                <form action="AddCriminalServlet" method="POST">
+                    <label for="name">Criminal Name: </label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="crime">Crime Committed: </label>
+                    <textarea id="crime" name="crimeCommitted" required>
+
+                    <label for="date">Date of Crime: </label>
+                    <input type="date" id="date" name="dateOfCrime" required>
+
+                    <label for="sentence">Sentence: </label>
+                    <input type="text" id="sentence" name="sentence" required>
+
+                    <button type="submit" class="button">Add Criminal</button>
+
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 Criminal Records Management System</p>
+        </footer>
+    </body>
