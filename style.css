@@ -25,6 +25,12 @@ header {
     z-index: 100;
 }
 
+header h1 {
+    display: block;
+    color: #89c2d9; 
+    font-size: 2em; 
+  }
+
 header nav ul {
     list-style-type: none;
     margin: 0;
