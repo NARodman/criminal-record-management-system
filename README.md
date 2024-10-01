@@ -16,9 +16,9 @@ The Criminal Records Management System (CRMS) is a web-based application designe
 criminal-record-management-system/
 │
 ├── index.html              # Homepage displaying records
-├── addCriminal.html        # Page for adding new criminal records
-├── listCriminal.html       # Page displaying a table of all criminal records
-├── editCriminal.html       # Page for viewing and editing existing criminal records
+├── add.html                # Page for adding new criminal records
+├── list.html               # Page displaying a table of all criminal records
+├── edit.html               # Page for viewing and editing existing criminal records
 ├── styles.css              # Stylesheet for all pages
 ├── script.js               # JavaScript file for handling logic
 ├── CriminalRecordsManager.java  # Java application file (optional)
@@ -35,6 +35,7 @@ criminal-record-management-system/
 2. Add a New Record 
 - CLick on the "Add Record" button in the navigation bar on the homepage. 
 - Fill in the "Name" and "Crime" fields
+- Click "Add Record" to save the entry  (Note: You can extend the form to include additional fields like "Date of Crime" and "Sentence" if needed.)
 3. View Records
 - All added records will be displayed on the main page(index.html) or list.html
 - If no records are present, a message indicating that no records are found will be shown.
@@ -71,9 +72,9 @@ Note: The Java application operates independently of the web application. Record
 ```bash
 File Name	                        Description
 index.html	                    Homepage displaying all criminal records.
-addCriminal.html	            Page with a form to add new criminal records.
-listCriminal.html	            Page displaying a table of all criminal records.
-editCriminal.html	            Page with a form to edit existing records.
+add.html	                    Page with a form to add new criminal records.
+list.html	                    Page displaying a table of all criminal records.
+edit.html	                    Page with a form to edit existing records.
 styles.css	                    Stylesheet for all pages, including animations.
 script.js	                    JavaScript file handling CRUD operations.
 CriminalRecordsManager.java	    Java application for managing records via CLI.
