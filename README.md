@@ -79,3 +79,22 @@ script.js	                    JavaScript file handling CRUD operations.
 CriminalRecordsManager.java	    Java application for managing records via CLI.
 README.md	                    Project documentation 
 ```
+## Technologies Used
+- HTML5: Structure of the web pages.
+- CSS3: Styling, layout, and animations.
+- JavaScript: Interactivity and data management.
+- Java (Optional): Standalone application for managing records via the command line.
+
+## License
+This project is licensed under MIT License
+
+## Future Enhancements
+- Search Functionality: Implement a search bar to filter records by name, crime, or date.
+- Sorting: Allow sorting records by different fields such as name or crime.
+- Pagination: Add pagination for better handling of large datasets.
+- Enhanced Security: Implement data encryption for sensitive information.
+- Backend Integration: Connect to a backend server and database for persistent and scalable data management.
+- Advanced Java Integration: Explore ways to integrate the Java application with the web frontend for synchronized data management.
+
+## Contact
+For any questions or suggestions, please reach out to Nina Lanier 
