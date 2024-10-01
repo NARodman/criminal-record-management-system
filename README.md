@@ -25,3 +25,14 @@ criminal-record-management-system/
 └── README.md               # Documentation for the project
 ```
 ## Installation
+1. Clone the repository 
+2. Navigate to the project folder
+
+## Usage
+1. Open the application: 
+- Open your web browser (e.g. Chrome, Firefox)
+- Navigate to the index.html file by dragging it into the browser or using File > Open File to locate and open it 
+2. Add a New Record 
+- CLick on the "Add Record" button in the navigation bar on the homepage. 
+- Fill in the "Name" and "Crime" fields
+- Click "Add Record" to save the entry. (Note: You can extend the form to include additional fields like "Date of Crime" or "Sentence" if needed)
