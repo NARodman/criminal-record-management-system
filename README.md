@@ -35,4 +35,15 @@ criminal-record-management-system/
 2. Add a New Record 
 - CLick on the "Add Record" button in the navigation bar on the homepage. 
 - Fill in the "Name" and "Crime" fields
-- Click "Add Record" to save the entry. (Note: You can extend the form to include additional fields like "Date of Crime" or "Sentence" if needed)
+3. View Records
+- All added records will be displayed on the main page(index.html) or list.html
+- If no records are present, a message indicating that no records are found will be shown.
+4. Edit a Record 
+- CLick the "Edit" button next to the record you wish to modify 
+- Update the "Name" and or/Crime fields. 
+- Click "Update Record" to save changes
+5. Delete a Record
+- Click the "Delete" button next to the record you choose to remove
+- Confirm the deletion in the prompt 
+
+## Java Application 
