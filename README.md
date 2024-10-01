@@ -47,3 +47,35 @@ criminal-record-management-system/
 - Confirm the deletion in the prompt 
 
 ## Java Application 
+If you wish to manage records through a standalone Java application: 
+
+1. Ensure Java is installed 
+- If not installed, download and install JDK from the Oracle wesbite or use an open source version.
+2. Compile the Java file
+- Navigate to the project directory 
+- Compile the java application 
+```bash
+javac CriminalRecordsManager.java
+```
+3. Run the application 
+- Execute the compiled Java program 
+```bash
+java CriminalRecordsManager
+```
+4. Manage Records
+- Follow the on-screen prompts to add, view, edit, or delete records via the command line interface.
+
+Note: The Java application operates independently of the web application. Records managed via the Java application are stored in a separate file (records.txt) and do not synchronize with the web application's local storage.
+
+## File Structure 
+```bash
+File Name	                        Description
+index.html	                    Homepage displaying all criminal records.
+addCriminal.html	            Page with a form to add new criminal records.
+listCriminal.html	            Page displaying a table of all criminal records.
+editCriminal.html	            Page with a form to edit existing records.
+styles.css	                    Stylesheet for all pages, including animations.
+script.js	                    JavaScript file handling CRUD operations.
+CriminalRecordsManager.java	    Java application for managing records via CLI.
+README.md	                    Project documentation 
+```
