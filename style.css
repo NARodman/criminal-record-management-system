@@ -35,3 +35,27 @@ nav h2 {
 .nav-link:hover {
     color: #b0c4de;
 }
+
+main {
+    padding: 40px 60px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    color: #1e3d59;
+}
+
+.hero {
+    background-color: #e0e7ff;
+    padding: 60px 20px;
+    border-radius: 10px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.hero h1 {
+    font-size: 3em;
+    color: #1e3d59;
+}
