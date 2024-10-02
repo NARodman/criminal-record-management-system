@@ -59,3 +59,13 @@ h1 {
     font-size: 3em;
     color: #1e3d59;
 }
+
+.hero p {
+    font-size: 1.2em;
+    color: #555;
+    margin: 20px 0;
+}
+
+.hero-buttons .button{
+    margin: 10px;
+}
