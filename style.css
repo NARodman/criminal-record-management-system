@@ -101,3 +101,29 @@ h1 {
 .feature-card p {
     color: #555;
 }
+
+.button{
+    padding: 10px 20px;
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.button:hover {
+    background-color: #374785;
+    transform: translateY(-2px);
+}
+
+.button.cancel {
+    background-color: #a9a9a9;
+}
+
+.button.cancel:hover {
+    background-color: #696969;
+}
