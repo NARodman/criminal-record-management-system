@@ -120,10 +120,12 @@ h1 {
     transform: translateY(-2px);
 }
 
-.button.cancel {
-    background-color: #a9a9a9;
-}
-
-.button.cancel:hover {
-    background-color: #696969;
+.form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2s);
+    animation: fadeIn 0.6s ease-in-out;
 }
