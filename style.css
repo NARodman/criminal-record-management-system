@@ -103,7 +103,7 @@ h1 {
 }
 
 .button {
-    padding: 10px 20px;
+    padding: 8px 16px;
     background-color: #1e90ff;
     color: white;
     border: none;
@@ -119,14 +119,24 @@ h1 {
     background-color: #374785;
     transform: translateY(-2px);
 }
+
 .button.cancel {
     background-color: #a9a9a9;
-
 }
 
 .button.cancel:hover {
     background-color: #696969;
 }
+
+.button.delete {
+    background-color: #ff4d4d;
+}
+
+.button.delete:hover {
+    background-color: #cc0000;
+}
+
+
 
 .form {
     max-width: 600px;
@@ -193,6 +203,7 @@ tf:hover {
     background-color: #1f1f1f;
 }
 
-.actions button, .actions a {
-    margin-right: 10px;
+.actions {
+    display: flex;
+    gap: 10px;
 }
