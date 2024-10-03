@@ -27,3 +27,34 @@ function displayRecordsTable() {
     });
 }
 
+//Function to Sanitize HTML to prevent XSS Attacks
+function sanitizeHTML(str) {
+    const temp = document.createElement('div');
+    temp.textContext = str;
+    return temp.innerHTML;
+}
+
+//Function to navigate to the edit page 
+function navigateToEdit(index) {
+    window.location.href = `edit.html?index=${index}`;
+}
+
+//Function to navigate back to homepage from add.html
+
+function cancelAdd() {
+    window.location.href = 'index.html';
+}
+
+//Function to navigate back to records list from edit.html
+function cancelEdit() {
+    window.location.href = 'list.html';
+}
+
+//function to add new record
+
+function addRecord(name, crime, date, sentence) {
+    records.push({name, crime, date, sentence});
+    localStorage.setItem('records', JSON.stringify(records));
+}
+
+//function to delete a record 
