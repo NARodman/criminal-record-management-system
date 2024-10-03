@@ -102,7 +102,7 @@ h1 {
     color: #555;
 }
 
-.button{
+.button {
     padding: 10px 20px;
     background-color: #1e90ff;
     color: white;
@@ -115,9 +115,17 @@ h1 {
     display: inline-block;
 }
 
-.button:hover {
+.button:hover{
     background-color: #374785;
     transform: translateY(-2px);
+}
+.button.cancel {
+    background-color: #a9a9a9;
+
+}
+
+.button.cancel:hover {
+    background-color: #696969;
 }
 
 .form {
@@ -149,3 +157,4 @@ h1 {
     transition: border-color 0.3s, box-shadow 0.3s;
     font-size: 1em;
 }
+
