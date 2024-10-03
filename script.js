@@ -58,3 +58,12 @@ function addRecord(name, crime, date, sentence) {
 }
 
 //function to delete a record 
+function deleteRecord(index) {
+    if(confirm('Are you sure you want to delete this record')){
+        records.splice(index, 1);
+        localStorage.setItem('records', JSON.stringify(records));
+        if (window.location.pathname.endsWith('list.html')) {
+            displayRecordsTable();
+        }
+    }
+}
