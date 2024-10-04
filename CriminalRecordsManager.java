@@ -36,7 +36,10 @@ import java.util.*;
         this.sentence = sentence;
     }
 
-    
+    //Serializes the Record to a string suitable for file storage
+    public String toString() {
+        return name + " | " + crime + " | " + dateOfCrime + " | " + sentence;
+    }
 
     }
  }
