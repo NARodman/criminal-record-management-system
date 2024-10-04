@@ -102,5 +102,15 @@ if (document.getElementById('edit-form')) {
 
     if(index !== null && records[index] !== undefined) {
         document.getElementById('index').value = index;
+        document.getElementById('name').value = records[index].name;
+        document.getElementById('crime').value = records[index].crime;
+        document.getElementById('date').value = records[index].date;
+        document.getElementById('sentence').value = records[index].sentence;
     }
+    else {
+        alert('Invalid Record Index');
+        window.location.href = 'list.html';
+    }
+
+    
 }
