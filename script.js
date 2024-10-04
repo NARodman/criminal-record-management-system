@@ -30,7 +30,7 @@ function displayRecordsTable() {
 //Function to Sanitize HTML to prevent XSS Attacks
 function sanitizeHTML(str) {
     const temp = document.createElement('div');
-    temp.textContext = str;
+    temp.textContent = str;
     return temp.innerHTML;
 }
 
@@ -113,7 +113,7 @@ if (document.getElementById('edit-form')) {
     }
 
     document.getElementById('edit-form').addEventListener('submit', function(event){
-        event.preventDefault;
+        event.preventDefault();
         const index = document.getElementById('index').value;
         const name = document.getElementById('name').value.trim();
         const crime = document.getElementById('crime').value.trim();
@@ -125,7 +125,7 @@ if (document.getElementById('edit-form')) {
             return;
         }
 
-        editRecord(name, crime, date, sentence);
+        editRecord(index, name, crime, date, sentence);
         window.location.href = 'list.html';
     });
 }
