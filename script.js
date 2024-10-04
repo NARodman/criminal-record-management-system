@@ -96,3 +96,11 @@ if (document.getElementById('add-form')) {
 }
 
 //Event Listener for Editing Records
+if (document.getElementById('edit-form')) {
+    const urlParams = new URLSearchParams(window.location.search);
+    const index = urlParams.get('index');
+
+    if(index !== null && records[index] !== undefined) {
+        document.getElementById('index').value = index;
+    }
+}
