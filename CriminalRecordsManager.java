@@ -16,4 +16,15 @@ import java.util.*;
  * @Nina Lanier
  */
 
- 
+ public class CriminalRecordsManager {
+    private static final String FILE_NAME = "records.txt";
+    private List<Record> records;
+
+    //Record class represents a single criminal record 
+    static class Record {
+        String name;
+        String crime;
+        String dateOfCrime;
+        String sentence;
+    }
+ }
