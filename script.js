@@ -81,8 +81,15 @@ if (document.getElementById('add-form')) {
     document.getElementById('add-form').addEventListener('submit', function(event){
         event.preventDefault();
         const name = document.getElementById('name').value.trim();
-        const name = document.getElementById('name').value.trim();
-        const name = document.getElementById('name').value.trim();
-        const name = document.getElementById('name').value.trim();
+        const crime = document.getElementById('crime').value.trim();
+        const date = document.getElementById('date').value.trim();
+        const sentence = document.getElementById('sentence').value.trim();
+
+        if (name === '' || crime === ''|| date === ''|| sentence === '') {
+            alert('Please fill in all fields');
+            return;
+        }
+
+        
     })
 }
