@@ -92,7 +92,7 @@ if (document.getElementById('add-form')) {
 
         addRecord(name, crime, date, sentence);
         window.location.href = 'list.html';
-    })
+    });
 }
 
 //Event Listener for Editing Records
@@ -112,5 +112,20 @@ if (document.getElementById('edit-form')) {
         window.location.href = 'list.html';
     }
 
-    
+    document.getElementById('edit-form').addEventListener('submit', function(event){
+        event.preventDefault;
+        const index = document.getElementById('index').value;
+        const name = document.getElementById('name').value.trim();
+        const crime = document.getElementById('crime').value.trim();
+        const date = document.getElementById('date').value.trim();
+        const sentence = document.getElementById('sentence').value.trim();
+
+        if (name === '' || crime === '' || date === '' || sentence === '') {
+            alert('Please fill in all fields.');
+            return;
+        }
+
+        editRecord(name, crime, date, sentence);
+        window.location.href = 'list.html';
+    });
 }
