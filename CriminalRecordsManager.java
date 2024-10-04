@@ -26,5 +26,17 @@ import java.util.*;
         String crime;
         String dateOfCrime;
         String sentence;
+    
+
+    //Constructor to Initialize a Record 
+    Record(String name, String crime, String dateOfCrime, String sentence) {
+        this.name = name;
+        this.crime = crime;
+        this.dateOfCrime = dateOfCrime;
+        this.sentence = sentence;
+    }
+
+    
+
     }
  }
