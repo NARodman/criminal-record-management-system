@@ -67,3 +67,22 @@ function deleteRecord(index) {
         }
     }
 }
+
+//Function to edit a record 
+function editRecord(index, name, crime, date, sentence) {
+    if(index >= 0 && index < records.length){
+        records[index] = {name, crime, date, sentence};
+        localStorage.setItem('records', JSON.stringify(records));
+    }
+}
+
+//Event Listener for Adding Records
+if (document.getElementById('add-form')) {
+    document.getElementById('add-form').addEventListener('submit', function(event){
+        event.preventDefault();
+        const name = document.getElementById('name').value.trim();
+        const name = document.getElementById('name').value.trim();
+        const name = document.getElementById('name').value.trim();
+        const name = document.getElementById('name').value.trim();
+    })
+}
