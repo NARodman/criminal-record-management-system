@@ -129,3 +129,9 @@ if (document.getElementById('edit-form')) {
         window.location.href = 'list.html';
     });
 }
+
+//Display Records in the table (list.html)
+
+if (document.querySelector('#recordsTable tbody')) {
+    displayRecordsTable();
+}
