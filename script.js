@@ -90,6 +90,9 @@ if (document.getElementById('add-form')) {
             return;
         }
 
-        
+        addRecord(name, crime, date, sentence);
+        window.location.href = 'list.html';
     })
 }
+
+//Event Listener for Editing Records
