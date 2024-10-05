@@ -41,5 +41,19 @@ import java.util.*;
         return name + " | " + crime + " | " + dateOfCrime + " | " + sentence;
     }
 
+    //Deserializes a string to a Record object
+    public static Record fromString(String recordStr) {
+        String[] parts = recordStr.split(" \\| ");
+        if (parts.length == 4) {
+            return new Record(parts[0], parts[1], parts[2], parts[3]);
+        }
+            return null;
+
+        }
     }
+
+
+
+
+    
  }
