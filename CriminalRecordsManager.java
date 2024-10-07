@@ -52,8 +52,21 @@ import java.util.*;
         }
     }
 
+    //Constructor that initlizes the records list and loads existing records from the file 
+    public CriminalRecordsManager() {
+        records = new ArrayList<>();
+        loadrecords();
+    }
+
+    //Loads records from the records.txt file
+    private void loadrecords() {
+        File file = new File(FILE_NAME);
+        if(!file.exists()) {
+            System.out.println("No existing records found. Starting fresh.");
+            return;
+        }
+    }
 
 
 
-    
  }
