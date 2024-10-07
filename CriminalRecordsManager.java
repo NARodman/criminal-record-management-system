@@ -65,7 +65,22 @@ import java.util.*;
             System.out.println("No existing records found. Starting fresh.");
             return;
         }
+
+        try (BufferedReader br = new BufferedReader(new FileReader(FILE_NAME))) {
+            String line;
+            while ((line = br.readLine()) != null) {
+                Record record = Record.fromString(line);
+                if (record != null) {
+                    records.add(record);
+                }
+            }
+            System.out.println("Loaded " + records.size() + "records.");
+        } catch (IOException e) {
+            System.out.println("Error loading records: " + e.getMessage());
+        }
     }
+
+    
 
 
 
