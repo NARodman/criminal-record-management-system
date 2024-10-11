@@ -94,6 +94,11 @@ import java.util.*;
     }
 
     //Adds New Record to Records List 
+    private void addRecord(String name, String crime, String dateOfCrime, String sentence) {
+        Record newRecord = new Record(name, crime, dateOfCrime, sentence);
+        records.add(newRecord);
+        System.out.println("Record Added Succesfully.");
+    }
 
 
  }
