@@ -80,7 +80,17 @@ import java.util.*;
         }
     }
 
-    
+    //Saves records to the records.txt file
+    private void saveRecords() {
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter(FILE_NAME))) {
+            for (Record record : records) {
+                bw.write(record.toString());
+                bw.newLine();
+            }
+            System.out.println("Records Saved Successfully.");
+            
+        }
+    }
 
 
 
