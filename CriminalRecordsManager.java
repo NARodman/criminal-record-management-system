@@ -88,7 +88,8 @@ import java.util.*;
                 bw.newLine();
             }
             System.out.println("Records Saved Successfully.");
-            
+        }catch (IOException e) {
+            System.out.println("Error saving records: " + e.getMessage());
         }
     }
 
