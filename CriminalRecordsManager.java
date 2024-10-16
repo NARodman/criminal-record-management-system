@@ -217,13 +217,35 @@ import java.util.*;
                     }
                     manager.editRecord(editIndex, newName, newCrime, newDate, newSentence);
                     break;
+                    case 4:
+                    manager.viewRecords();
+                    if (manager.records.isEmpty()) {
+                        break;
+                    }
+                    System.out.print("Enter the record number to delete: ");
+                    String deleteInput = scanner.nextLine();
+                    int deleteIndex;
+                    try {
+                        deleteIndex = Integer.parseInt(deleteInput) - 1;
+                    } catch (NumberFormatException e) {
+                        System.out.println("Invalid input. Please enter a number.");
+                        break;
+                    }
+                    manager.deleteRecord(deleteIndex);
+                    break;
+                case 5:
+                    System.out.println("Exiting Criminal Records Management System. Goodbye!");
+                    manager.saveRecords();
+                    scanner.close();
+                    return;
+                default:
+                    System.out.println("Invalid option. Please choose a number between 1 and 5.");
 
 
-
-            }
             }
         }
-    }
-
-
+     }
  }
+
+
+ 
