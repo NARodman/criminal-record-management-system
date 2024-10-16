@@ -100,7 +100,16 @@ import java.util.*;
         System.out.println("Record Added Succesfully.");
     }
 
-    
+    //Displays records in a formatted manner 
+    private void viewRecords() {
+        if(records.isEmpty()) {
+            System.out.println("No records to display.");
+            return;
+        }
+
+        System.out.println("\n--- Criminal Records ---");
+        
+    }
 
 
  }
