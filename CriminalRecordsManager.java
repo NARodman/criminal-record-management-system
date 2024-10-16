@@ -136,6 +136,7 @@ import java.util.*;
         records.remove(index);
         System.out.println("Record Deleted Successfully.");
     }
+    //Displays Main Menu to user 
     
 
 
