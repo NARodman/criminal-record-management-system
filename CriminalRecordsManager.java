@@ -143,6 +143,8 @@ import java.util.*;
         System.out.println("2. View Records");
         System.out.println("3. Edit Record");
         System.out.println("4. Delete Record");
+        System.out.println("5. Exit");
+        System.out.print("Enter your choice: ");
     }
 
 
