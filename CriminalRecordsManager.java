@@ -127,5 +127,16 @@ import java.util.*;
         System.out.println("Record Update Successfully.");
     }
 
+    //Deletes a record at specified index 
+    private void deleteRecord (int index) {
+        if (index < 0 || index >= records.size()) {
+            System.out.println("Invalid record number.");
+            return;
+        }
+        records.remove(index);
+        System.out.println("Record Deleted Successfully.");
+    }
+    
+
 
  }
