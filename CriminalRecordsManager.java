@@ -170,7 +170,7 @@ import java.util.*;
                     String name = scanner.nextLine().trim();
                     System.out.print("Enter Crime: ");
                     String crime = scanner.nextLine().trim();
-                    System.out.print("Enter Date of Crime: ");
+                    System.out.print("Enter Date of Crime (YYYY-MM-DD): ");
                     String dateOfCrime = scanner.nextLine().trim();
                     System.out.print("Enter Sentence: ");
                     String sentence = scanner.nextLine().trim();
@@ -199,6 +199,26 @@ import java.util.*;
                         System.out.println("Invalid input. Please Enter a Number: ");
                         break;
                     }
+                    if (editIndex < 0 || editIndex >= manager.records.size()) {
+                        System.out.println("Invalid record number.");
+                        break;
+                    }
+                    System.out.print("Enter Name: ");
+                    String newName = scanner.nextLine().trim();
+                    System.out.print("Enter Crime: ");
+                    String newCrime = scanner.nextLine().trim();
+                    System.out.print("Enter Date of Crime (YYYY-MM-DD): ");
+                    String newDate = scanner.nextLine().trim();
+                    System.out.print("Enter Sentence: ");
+                    String newSentence = scanner.nextLine().trim();
+                    if (newName.isEmpty() || newCrime.isEmpty() || newDate.isEmpty() || newSentence.isEmpty()) {
+                        System.out.println("All fields are required. Record not updated.");
+                        break;
+                    }
+                    manager.editRecord(editIndex, newName, newCrime, newDate, newSentence);
+                    break;
+
+
 
             }
             }
