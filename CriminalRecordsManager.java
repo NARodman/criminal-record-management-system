@@ -165,7 +165,29 @@ import java.util.*;
             }
 
             switch(choice) {
-                
+                case 1:
+                    System.out.print("Enter Name: ");
+                    String name = scanner.nextLine().trim();
+                    System.out.print("Enter Crime: ");
+                    String crime = scanner.nextLine().trim();
+                    System.out.print("Enter Date of Crime: ");
+                    String dateOfCrime = scanner.nextLine().trim();
+                    System.out.print("Enter Sentence: ");
+                    String sentence = scanner.nextLine().trim();
+                    if (name.isEmpty() || crime.isEmpty() || dateOfCrime.isEmpty() || sentence.isEmpty()) {
+                        System.out.println("All fields required. Record not addeded.");
+                        break;
+                    } 
+                    manager.addRecord(name, crime, dateOfCrime, sentence);
+                    break;
+
+                case 2:
+                    manager.viewRecords();
+                    break;
+
+                case 3:
+                    
+
             }
             }
         }
