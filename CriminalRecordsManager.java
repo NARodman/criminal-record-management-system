@@ -186,7 +186,19 @@ import java.util.*;
                     break;
 
                 case 3:
-                    
+                    manager.viewRecords();
+                    if (manager.records.isEmpty()){
+                        break;
+                    }
+                    System.out.print("Enter record number to edit: ");
+                    String editInput = scanner.nextLine();
+                    int editIndex;
+                    try {
+                        editIndex = Integer.parseInt(editInput) - 1;
+                    } catch (NumberFormatException e) {
+                        System.out.println("Invalid input. Please Enter a Number: ");
+                        break;
+                    }
 
             }
             }
