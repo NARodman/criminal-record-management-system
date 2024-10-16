@@ -137,7 +137,13 @@ import java.util.*;
         System.out.println("Record Deleted Successfully.");
     }
     //Displays Main Menu to user 
-    
+    private void displayMenu() {
+        System.out.println("\n--- Criminal Records Manager ---");
+        System.out.println("1. Add Record");
+        System.out.println("2. View Records");
+        System.out.println("3. Edit Record");
+        System.out.println("4. Delete Record");
+    }
 
 
  }
