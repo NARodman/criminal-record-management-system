@@ -147,5 +147,29 @@ import java.util.*;
         System.out.print("Enter your choice: ");
     }
 
+    //Main method to run the application 
+    public static void main(String[] args) {
+        Criminal RecordsManager manager = newCriminalRecordsManager();
+        Scanner scanner = new Scanner(System.in);
+
+        while(true) {
+            manager.displayMenu();
+            String input = scanner.nextLine();
+            int choice;
+
+            try {
+                choice = Integer.parseInt(input);
+            } catch (NumberFormatException e) {
+                System.out.println("Please Enter A Valid Number: ");
+                continue;
+            }
+
+            switch(choice) {
+                
+            }
+            }
+        }
+    }
+
 
  }
