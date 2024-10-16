@@ -149,7 +149,7 @@ import java.util.*;
 
     //Main method to run the application 
     public static void main(String[] args) {
-        Criminal RecordsManager manager = newCriminalRecordsManager();
+        CriminalRecordsManager manager = new CriminalRecordsManager();
         Scanner scanner = new Scanner(System.in);
 
         while(true) {
