@@ -108,8 +108,12 @@ import java.util.*;
         }
 
         System.out.println("\n--- Criminal Records ---");
-        
+        for (int i = 0; i < records.size(); i++) {
+            Record r = records.get(i);
+            System.out.println((i + 1) + ".Name: " + r.name + ", .Crime: " + r.crime + ", Date of Crime: " + r.dateOfCrime + ", Sentence: " + r.sentence);
+        }
     }
+    
 
 
  }
