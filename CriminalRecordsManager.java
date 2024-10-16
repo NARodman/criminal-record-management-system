@@ -113,7 +113,19 @@ import java.util.*;
             System.out.println((i + 1) + ".Name: " + r.name + ", .Crime: " + r.crime + ", Date of Crime: " + r.dateOfCrime + ", Sentence: " + r.sentence);
         }
     }
-    
+    //Edits an existing record at specified index 
+    private void editRecord(int index, String name, String crime, String dateOfCrime, String sentence) {
+        if (index < 0 || index >= records.size()) {
+            System.out.println("Invalid record number.");
+            return;
+        }
+        Record r  = records.get(index);
+        r.name = name;
+        r.crime = crime;
+        r.dateOfCrime = dateOfCrime;
+        r.sentence = sentence;
+        System.out.println("Record Update Successfully.");
+    }
 
 
  }
